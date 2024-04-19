@@ -1,49 +1,29 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Aboutbuilding from "../assets/aboutbuilding.jpeg";
+import AboutIITP from "../assets/aboutIIT.jpeg";
 import RightArrowBlue from "../components/svg/RightArrowBlue";
+import FixedButton from "./svg/FixedButton";
 
-export const AboutUniversal = () => {
+
+export const AboutIIT = () => {
   return (
-    <section className="about-universal ">
+    <section className="about-universal mt-20">
       <Container>
         <Row className="relative">
-          {/* Left side: Image */}
-          <Col sm={12} md={4} className="d-flex align-items-center">
-            <div className="image-container">
-              <div className="yellow-gradient "></div>
-              <img
-                style={{
-                  position: "relative",
-                  left: "100px",
-                  zIndex: "2",
-                  borderRadius: "25px",
-                  boxShadow:
-                    "10px 10px 10px #FDDF49" /* Adjust shadow as needed */,
-                }}
-                className=""
-                src={Aboutbuilding}
-                alt=""
-                width={"525px"}
-                height={"34px"}
-              />{" "}
-            </div>
-          </Col>
-
-          {/* Right side: Text */}
+          {/* Left side: Text */}
           <Col
             sm={12}
             md={8}
             className="d-flex align-items-center h-full"
             style={{
-              background: "#FFF9DA",
+              background: "#6767C826",
               borderRadius: "33px",
-              paddingTop: "80px",
-              paddingLeft: "280px",
-              paddingRight: "70px",
+              paddingTop: "100px",
+              paddingLeft: "70px",
+              paddingRight: "280px",
               paddingBottom: "80px",
               position: "relative",
-              right: "120px",
+              left: "120px",
             }}
           >
             <div className="text-container bg-yellow">
@@ -58,6 +38,8 @@ export const AboutUniversal = () => {
                   }}
                 >
                   About
+                  <FixedButton />
+
                 </h4>
 
                 <h1
@@ -85,6 +67,31 @@ export const AboutUniversal = () => {
                 </p>
                 <RightArrowBlue />
               </Container>
+            </div>
+          </Col>
+          {/* Right side: Image */}
+          <Col
+            sm={12}
+            md={4}
+            className="d-flex align-items-center justify-content-end"
+          >
+            <div className="image-container">
+              <div className="yellow-gradient "></div>
+              <img
+                style={{
+                  position: "relative",
+                  right: "80px",
+                  zIndex: "2",
+                  borderRadius: "25px",
+                  boxShadow:
+                    "10px 10px 0px #292967" /* Adjust shadow as needed */,
+                }}
+                className=""
+                src={AboutIITP}
+                alt=""
+                width={"525px"}
+                height={"34px"}
+              />{" "}
             </div>
           </Col>
         </Row>

@@ -74,6 +74,9 @@ function Banner() {
           </Row>
         </Container>
       </div>
+      <div className="fixed-button">
+        <button className="rotate-text">Enquire Now</button>
+      </div>
     </div>
   );
 }
