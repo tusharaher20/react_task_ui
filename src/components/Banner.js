@@ -85,7 +85,7 @@ function Banner() {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col className="relative">
               {" "}
               <span>
                 <img
