@@ -97,8 +97,8 @@ function Banner() {
                     paddingTop: "56px",
                     marginTop: "auto",
                     position: "absolute",
-                    left: "662px",
-                    top: "158px",
+                    left: "-38px",
+                    top: "170px",
 
 
                   }}
