@@ -91,11 +91,49 @@ body {
   padding: 85px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
-background: linear-gradient(
-45deg,
-rgba(218,34,255,0.6),
-rgba(151,51,238,0.7)
-),
-url(./assets//mapImg.png) center center;
-background-size: cover;
+  background: linear-gradient(252.82deg, #292967 -8.28%, #000000 270.86%),
+    url(./assets//mapImg.png) center center;
+  background-size: cover;
+}
+
+.outer-container-college {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-align: center; /* Center text */
+}
+
+.h-college {
+  border-radius: 50%;
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+}
+
+.svg-icon-college {
+  align-self: center;
+}
+
+.approachTxt {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.borderRight {
+  border-right: 2px dashed transparent;
+  border-right-width: 2px;
+  border-image: repeating-linear-gradient(
+    to bottom,
+    white,
+    white 12px,
+    transparent 9px,
+    transparent 25px
+  );
+  border-image-slice: 1;
 }
