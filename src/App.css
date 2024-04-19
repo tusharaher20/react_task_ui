@@ -36,3 +36,66 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/Satoshi-Regular.woff") format("woff2"),
+    /* Modern Browsers */ url("./assets/Satoshi-Regular.woff2") format("woff"); /* Legacy Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Banner {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(230, 243, 255),
+      rgba(255, 252, 235)
+    ),
+    url("./assets/bannerBg.jpeg");
+
+  background-size: cover;
+  /* color: white; */
+  /* padding: 20px; */
+}
+
+.Kickstart {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.IITJEE {
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 67.5px;
+  text-align: left;
+  color: #191970;
+}
+
+.Poweredby {
+  font-size: 18.33px;
+  font-weight: 900;
+  line-height: 24.75px;
+  text-align: center;
+}
+.newsletter-bx {
+  /* background: #ffffff; */
+  border-radius: 55px;
+  color: #121212;
+  padding: 85px 125px;
+  margin-bottom: 80px;
+  margin-top: -122px;
+background: linear-gradient(
+45deg,
+rgba(218,34,255,0.6),
+rgba(151,51,238,0.7)
+),
+url(./assets//mapImg.png) center center;
+background-size: cover;
+}
