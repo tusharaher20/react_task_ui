@@ -6,7 +6,7 @@ const Rightcard = () => {
   return (
       <Row>
         <Col>
-          <Card className="main-card">
+          <Card className="main-card" style={{borderRadius:"33px"}}>
             <Card.Body id="rightCardID">
               <Card.Title className="card-title text-white">ISC + IIT JEE </Card.Title>
               <Card.Text c>

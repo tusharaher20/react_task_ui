@@ -13,19 +13,16 @@ function UINavbar() {
         <Navbar.Brand href="#home">
           <Row className="align-items-center">
             <Col>
-              <img src={universalLogo} width={'259.38px'} alt='logo1'/>
+              <img src={universalLogo} width={'359.38px'} alt='logo1'/>
             </Col>
-            <Col>
-              <hr className="" style={{ border: '2px solid black', margin: '0 ', height: '40px' }} />
-            </Col>
+              <div style={{ borderLeft: '2px solid black', height: '40px', margin: '0 20px' , width:'2px'}}></div>
             <Col>
               <img src={paceLogo} width={'87.59px'} alt='logo2'/>
             </Col>
           </Row>
         </Navbar.Brand>
         <Row className='ml-auto' id="basic-navbar-nav">
-       
-          <Button style={{backgroundColor:'#292967',width:'120px',height:'54.16px', borderRadius:'27.08px'}} className="pb-2 ml-auto">Get Info</Button>
+          <Button style={{ backgroundColor: '#292967', width: '120px', height: '54.16px', borderRadius: '27.08px' }} className="pb-2 ml-auto">Get Info</Button>
         </Row>
       </Container>
     </Navbar>

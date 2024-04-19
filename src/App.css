@@ -72,7 +72,7 @@ body {
 
 .IITJEE {
   font-size: 50px;
-  font-weight: 900;
+  font-weight: bolder;
   line-height: 67.5px;
   text-align: left;
   color: #191970;
@@ -90,7 +90,7 @@ body {
   color: #121212;
   padding: 35px 125px;
   margin-bottom: 80px;
-  margin-top: -122px;
+  margin-top: -230px;
   background: linear-gradient(252.82deg, #292967 -8.28%, #000000 270.86%),
     url(./assets//mapImg.png) center center;
   background-size: cover;
@@ -114,7 +114,7 @@ body {
 .h-downarrow {
   border-radius: 50%;
   position: absolute;
-  top: -140px;
+  top: -250px;
   width: 40px; /* Adjust the width as needed */
   height: 40px; /* Adjust the height as needed */
   display: flex;
@@ -231,4 +231,14 @@ body {
 
 .fixedbuttonsvg{
   transform: rotate(90deg);
+}
+
+.formHeadings{
+  font-size: 13px !important;
+  text-align: left !important;
+}
+
+.bannerImage{
+  display: flex;
+  justify-content: center;
 }

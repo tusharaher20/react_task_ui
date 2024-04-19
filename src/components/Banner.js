@@ -4,53 +4,83 @@ import Col from "react-bootstrap/Col";
 import BannerImg from "../assets/BannerImg.png";
 import PaceLogo2 from "../assets/PaceLogo2.png";
 import studentIcon from "../assets/studentIcon.svg";
+import RightArrowBlue from "./svg/RightArrowBlue";
+import EnquiryForm from "./form/EnquiryForm";
+
 
 function Banner() {
   return (
-    <div className="BannerOuter ">
-      <div className="bg-image vh-100 Banner ">
+    <div className="BannerOuter relative">
+      <div className="bg-image pt-32 pb-60 Banner ">
         <Container>
           <Row>
             <Col>
               <div class="">
                 <div class="static-text">
                   <p className="Kickstart">KICKSTART YOUR</p>
-                  <p className="IITJEE">IIT JEE/NEET Test Prep,</p>
+                  <p className="IITJEE text-nowrap">IIT JEE/NEET Test Prep,</p>
                   <p className="Poweredby"> Powered by</p>
                 </div>
-
-                <img
-                  src={PaceLogo2}
-                  width={"132.42px"}
-                  alt="notfound"
-                  class="bottom-image"
-                />
-
-                <div class="row">
-                  <div class="col d-flex justify-content-around align-items-end">
-                    <span className="Kickstart">Admissions Open</span>
-                    <button>Enquire Now</button>
-                  </div>
-                </div>
-
-                <div class="image-text-row">
-                  {/* <img src={PaceLogo2} alt="notfound" class="left-image" /> */}
-                  <div class="right-text">
-                    <p>Batch Starts From</p>
-                    <p>3rd April '24</p>
-                  </div>
-                </div>
-
-                <div class="image-text-row">
+                <div className="col-12 bannerImage text-center m-auto">
+                  {" "}
                   <img
-                    width={"47px"}
+                    src={PaceLogo2}
+                    width={"132.42px"}
+                    alt="notfound"
+                    class="bottom-image text-center items-center"
+                  />
+                </div>
+
+                <div class="row pt-4">
+                  <div class="col d-flex justify-content-left align-items-end">
+                    <span className="Kickstart p-1">ADMISSIONS OPEN</span>
+                    <RightArrowBlue />{" "}
+                  </div>
+                </div>
+
+                <div className="image-text-row row pt-4">
+                  <img
+                    style={{ width: "70px" }}
                     src={studentIcon}
                     alt="notfound"
-                    class="left-image"
+                    className="left-image col-3"
                   />
-                  <div class="right-text">
-                    <p>Scholarship Test</p>
-                    <p>23rd March '24</p>
+                  <div className="right-text col-9">
+                    <span
+                      style={{ fontWeight: "bolder" }}
+                      className="col-8 d-block border-l  uppercase text-left"
+                    >
+                      Batch Starts From
+                    </span>
+                    <span
+                      style={{ fontWeight: "bolder" }}
+                      className="col-8 d-block  uppercase text-left"
+                    >
+                      3rd April '24
+                    </span>
+                  </div>
+                </div>
+
+                <div className="image-text-row row">
+                  <img
+                    style={{ width: "70px" }}
+                    src={studentIcon}
+                    alt="notfound"
+                    className="left-image col-3"
+                  />
+                  <div className="right-text col-9">
+                    <span
+                      style={{ fontWeight: "bolder" }}
+                      className="col-8 d-block border-l  uppercase text-left"
+                    >
+                      Batch Starts From
+                    </span>
+                    <span
+                      style={{ fontWeight: "bolder" }}
+                      className="col-8 d-block  uppercase text-left"
+                    >
+                      3rd April '24
+                    </span>
                   </div>
                 </div>
               </div>
@@ -61,22 +91,28 @@ function Banner() {
                 <img
                   src={BannerImg}
                   className=""
-                  width={"100px"}
+                  width={"600px"}
                   alt=""
-                  style={{ paddingTop: "100px" }}
+                  style={{
+                    paddingTop: "56px",
+                    marginTop: "auto",
+                    position: "absolute",
+                    left: "662px",
+                    top: "158px",
+
+
+                  }}
                 />
               </span>
             </Col>
             <Col>
               {" "}
-              <h1>Tushar Aher</h1>
+              <EnquiryForm />
             </Col>
           </Row>
         </Container>
       </div>
-      <div className="fixed-button">
-        <button className="rotate-text">Enquire Now</button>
-      </div>
+
     </div>
   );
 }

@@ -1,72 +1,154 @@
 import React from "react";
-import { Container, Form, Button } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
+import RightArrowCenterNoIcon from '../svg/RightArrowCenterNoIcon'
 
 const EnquiryForm = () => {
   return (
-    <Container >
-      <Form className="col-4 pt-30 pb-130 h-screen">
-        <Form.Group controlId="academicYear">
-          <Form.Label>ENQUIRE NOW!</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="ENQUIRE NOW! 2024-2026"
-            readOnly
-          />
-        </Form.Group>
+    <Container className="mt-30 mb-30  col">
+      <div style={{ textAlign: "center", marginTop: "20px" }}>
+        <h2
+          style={{
+            color: "#292967",
+            backgroundColor: "#FDDF49",
+            padding: "10px",
+            borderRadius: "17px 17px 0px 0px ",
+            fontFamily: "Satoshi",
+            fontSize: "20px",
+            fontWeight: 700,
+            lineHeight: "27px",
+            textAlign: "center",
+          }}
+        >
+          ENQUIRE NOW!
+        </h2>
+      </div>
+      <div className="pt-3 pb-3 pl-3 pr-3">
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "15px",
+          }}
+        >
+          <span className="col-4 text-left" style={{ marginRight: "auto", fontSize: "16px" }}>
+            Academic Year
+          </span>
+          <Button className="w-full col-8 "
+            style={{
+              background: "#292967",
+              borderRadius: "4px",
+              fontSize: "13px",
+            }}
+            variant="secondary"
+          >
+            2024-2026
+          </Button>
+        </div>
 
-        <Form.Group controlId="relationship">
-          <Form.Label>Your Relationship with the Child</Form.Label>
-          <Form.Control as="select">
-            <option value="father">Father</option>
-            <option value="mother">Mother</option>
-          </Form.Control>
-        </Form.Group>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            marginBottom: "15px",
+          }}
+        >
+          <span
+            className="col-4 text-left"
+            style={{ marginRight: "auto", fontSize: "16px" }}
+          >
+            Your Relationship <br></br> with the Child
+          </span>
+          <Button
+            className="col-4 text-left w-full"
+            style={{
+              color: "#FFFFFF",
+              background: "#292967",
+              borderRadius: "4px 0px 0px 4px ",
+              marginRight: "0px",
+              paddingLeft: "20px",
+              paddingRight: "20px",
+            }}
+            variant="dark"
+          >
+            Father
+          </Button>
+          <Button
+            className="col-4 w-full"
+            style={{
+              background: "white",
+              color: "black",
+              borderRadius: "0px 4px 4px 0px ",
+              border: "1px solid black",
+              paddingLeft: "20px",
+              paddingRight: "20px",
+            }}
+            variant="light"
+          >
+            Mother
+          </Button>
+        </div>
 
-        <Form.Group controlId="childFirstName">
-          <Form.Label>Child's First Name</Form.Label>
-          <Form.Control type="text" placeholder="Type Here" />
-        </Form.Group>
+        <div className="row text-left">
+          <div className="col">
+            <div style={{ marginBottom: "15px" }}>
+              <span className="formHeadings col-6">Child's First Name &nbsp; &nbsp; </span>
+              <Button
+                variant="outline-secondary"
+                className="formHeadings col-6 w-100"
+                style={{ marginLeft: "10px" }}
+              >
+                First Name
+              </Button>
+            </div>
+          </div>
+          <div className="col">
+            <div style={{ marginBottom: "15px" }}>
+              <span className="formHeadings  col-6 w-100">Child's Last Name &nbsp; &nbsp;</span>
+              <Button
+                variant="outline-secondary"
+                className="formHeadings  col-6 w-100"
+                style={{ marginLeft: "10px" }}
+              >
+                First Name
+              </Button>
+            </div>
+          </div>
+        </div>
 
-        <Form.Group controlId="childLastName">
-          <Form.Label>Child's Last Name</Form.Label>
-          <Form.Control type="text" placeholder="Type Here" />
-        </Form.Group>
+        <div className="col-12 text-left" style={{ marginBottom: "15px" }}>
+          <span className="formHeadings col-12 text-left">Course Applying For</span>
+          <Button
+            variant="outline-secondary"
+            className="formHeadings col-12 text-left"
+            style={{ marginLeft: "10px" }}
+          >
+            Choose Course
+          </Button>
+        </div>
 
-        <Form.Group controlId="yourName">
-          <Form.Label>Your Name</Form.Label>
-          <Form.Control type="text" placeholder="Type Here" />
-        </Form.Group>
+        <div className="col-12 text-left" style={{ marginBottom: "15px" }}>
+          <span className="formHeadings col-12 text-left">Mobile Number</span>
+          <Button
+            variant="outline-secondary"
+            className="formHeadings col-12 text-left"
+            style={{ marginLeft: "10px" }}
+          >
+            +91 Enter your Mobile Number
+          </Button>
+        </div>
 
-        <Form.Group controlId="yourLastName">
-          <Form.Label>Your Last Name</Form.Label>
-          <Form.Control type="text" placeholder="Type Here" />
-        </Form.Group>
+        <div className="col-12 text-left" style={{ marginBottom: "15px" }}>
+          <span className="formHeadings col-12 text-left">Email Address</span>
+          <Button
+            variant="outline-secondary"
+            className="formHeadings col-12 text-left"
+            style={{ marginLeft: "10px" }}
+          >
+            yourname@example.com
+          </Button>
+        </div>
 
-        <Form.Group controlId="course">
-          <Form.Label>Course Applying For</Form.Label>
-          <Form.Control as="select">
-            <option value="chooseCourse">Choose Course</option>
-            {/* Add options for available courses */}
-          </Form.Control>
-        </Form.Group>
-
-        <Form.Group controlId="mobileNumber">
-          <Form.Label>Mobile Number</Form.Label>
-          <Form.Control
-            type="text"
-            placeholder="+91 Enter your Mobile Number"
-          />
-        </Form.Group>
-
-        <Form.Group controlId="emailAddress">
-          <Form.Label>Email Address</Form.Label>
-          <Form.Control type="email" placeholder="yourname@example.com" />
-        </Form.Group>
-
-        <Button variant="primary" type="submit">
-          Enquire Now
-        </Button>
-      </Form>
+<RightArrowCenterNoIcon/>      </div>
     </Container>
   );
 };
