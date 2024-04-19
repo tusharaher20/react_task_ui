@@ -88,7 +88,7 @@ body {
   /* background: #ffffff; */
   border-radius: 55px;
   color: #121212;
-  padding: 85px 125px;
+  padding: 35px 125px;
   margin-bottom: 80px;
   margin-top: -122px;
   background: linear-gradient(252.82deg, #292967 -8.28%, #000000 270.86%),
@@ -110,6 +110,20 @@ body {
   height: 100px; /* Adjust the height as needed */
   display: flex;
   justify-content: center;
+}
+.h-downarrow {
+  border-radius: 50%;
+  position: absolute;
+  top: -140px;
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+}
+.h-downarrow {
+  border-radius: 50%;
+  width: 40px; /* Adjust the width as needed */
+  height: 40px; /* Adjust the height as needed */
 }
 
 .svg-icon-college {
